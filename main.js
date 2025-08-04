@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sendButton = document.getElementById('send-button');
 
     // Ganti dengan API Key OpenAI Anda
-    const API_KEY = "sk-anda...";
+    const API_KEY = "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";
     const API_URL = "https://api.openai.com/v1/chat/completions";
 
     // Menambahkan pesan ke chat
