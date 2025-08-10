@@ -1,222 +1,600 @@
 <!--
---  Uploaded on : https://haxor.my.id/open/g4mm4xploit.html
+--  Uploaded on : https://haxor.my.id/open/ArdianDeface.html
 --  Official Web : https://prinsh.com
 --  script-deface-generator.prinsh.com
 -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Alert</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+<html>
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="description" content="[!] B FOR BELLA [!]"> 
+  <meta name="keywords" content="[!] B FOR BELLA [!]"> 
+  <meta http-equiv="cache-control" content="index,cache"> 
+  <meta http-equiv="pragma" content="index,cache"> 
+  <meta name="theme-color" content="black"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link rel="preload" as="image/png" href="Tod"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> 
+  <link rel="icon" href="https://h.top4top.io/p_3059roj7i0.jpg"> 
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&amp;family=Roboto&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> 
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&amp;family=Josefin+Sans&amp;display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+      /* Added background styles */
+      body {
+          background: #000;
+          position: relative;
+          overflow: hidden;
+      }
+      
+      .cyber-bg {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+      }
+      
+      #particles-js {
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          z-index: -1;
+          background: #000;
+      }
+      
+      .grid-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background-image: 
+              linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+          background-size: 50px 50px;
+          pointer-events: none;
+      }
+      
+      .scanlines {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background: linear-gradient(
+              rgba(0, 0, 0, 0) 50%,
+              rgba(0, 255, 0, 0.05) 50%
+          );
+          background-size: 100% 3px;
+          animation: scan 4s linear infinite;
+          pointer-events: none;
+      }
+      
+      @keyframes scan {
+          0% { background-position: 0 0; }
+          100% { background-position: 0 100%; }
+      }
 
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            overflow: hidden;
-            cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1052.cur'), auto;
-            text-align: center;
-            font-family: 'Patrick Hand', cursive;
-            background-color: #000;
-            position: relative;
-        }
+      /* Your existing styles below */
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Josefin+Sans&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto&family=Roboto+Mono&display=swap');
+      :root{
+      --white: #FFFFFF;
+      --img: invert(0%) sepia(0%) saturate(9%) hue-rotate(204deg) brightness(108%) contrast(103%);
+      }
+      .parent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      img {
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+      transition: filter 0.5s;
+      overflow: hidden;
+      }
+      .texts{
+      margin:auto;
+      color: var(--white);
+      font-family: 'Josefin Sans', sans-serif;
+      }
+      .texts2{
+      margin:auto;
+      color: var(--white);
+      font-weight:bolder; 
+      font-family: sans-serif;
+      opacity: 50%;
+      }
+      .texts3{
+      margin:auto;
+      font-family: 'Courier Prime', monospace;
+      }
+      html, body{
+      height: 100%;
+      margin:0;
+      padding:0;
+      overflow:hidden;
+      }
+      .container{
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      }
+      .middle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      }
+      .cusbtn {
+      content: ' ';
+      background-color: #4caf4f00;
+      border: 0.1rem solid var(--white);
+      color: var(--white);
+      padding: 10px 27px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      }
+      .boxborder {
+      border: 0.1rem solid var(--white);
+      padding: 0;
+      }
+      .drp {
+      font-size: 15px;
+      color: var(--white);
+      background: #000000;
+      font-family: 'Roboto', sans-serif;
+      }
+      .type {
+      display:inline-block;
+      vertical-align: bottom;
+      }
+      .type > span {
+      color: #14f3db;
+      display:grid;
+      overflow: hidden;
+      height:1.2em;
+      }
+      .type span span {
+      width:0%;
+      line-height: 1.7;
+      max-width:max-content;
+      overflow: hidden;
+      height:inherit;
+      word-break:break-all;
+      animation:
+          t 2s linear infinite alternate,
+          m 12s steps(3) infinite;
+      }
+      .type span span:before {
+      content:" ";
+      display:inline-block;
+      }
+      @keyframes t{
+      90%,100% {width:100%}
+      }
+      @keyframes c{
+      0%,100%{box-shadow:3px 0 0 #0000}
+      50%{box-shadow:3px 0 0 white}
+      }
+      @keyframes m{
+      100% {transform:translateY(-300%)}
+      }
+  </style> 
+  <title>Hacked By Mr.risky</title> 
+ </head> 
+ <body onload="display_ct7();" scroll="no" style="overflow: hidden"> 
+  <!-- Added background elements -->
+  <div id="particles-js"></div>
+  <div class="grid-overlay"></div>
+  <div class="scanlines"></div>
+  
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+      // Initialize particles.js for background
+      particlesJS('particles-js', {
+          "particles": {
+              "number": {
+                  "value": 120,
+                  "density": {
+                      "enable": true,
+                      "value_area": 800
+                  }
+              },
+              "color": {
+                  "value": "#00ff00"
+              },
+              "shape": {
+                  "type": "circle",
+                  "stroke": {
+                      "width": 0,
+                      "color": "#000000"
+                  }
+              },
+              "opacity": {
+                  "value": 0.5,
+                  "random": true,
+                  "anim": {
+                      "enable": true,
+                      "speed": 1,
+                      "opacity_min": 0.1,
+                      "sync": false
+                  }
+              },
+              "size": {
+                  "value": 3,
+                  "random": true,
+                  "anim": {
+                      "enable": true,
+                      "speed": 2,
+                      "size_min": 0.1,
+                      "sync": false
+                  }
+              },
+              "line_linked": {
+                  "enable": true,
+                  "distance": 150,
+                  "color": "#00ff00",
+                  "opacity": 0.2,
+                  "width": 1
+              },
+              "move": {
+                  "enable": true,
+                  "speed": 3,
+                  "direction": "none",
+                  "random": true,
+                  "straight": false,
+                  "out_mode": "out",
+                  "bounce": false,
+                  "attract": {
+                      "enable": false,
+                      "rotateX": 600,
+                      "rotateY": 1200
+                  }
+              }
+          },
+          "interactivity": {
+              "detect_on": "canvas",
+              "events": {
+                  "onhover": {
+                      "enable": true,
+                      "mode": "repulse"
+                  },
+                  "onclick": {
+                      "enable": true,
+                      "mode": "push"
+                  },
+                  "resize": true
+              },
+              "modes": {
+                  "repulse": {
+                      "distance": 100,
+                      "duration": 0.4
+                  },
+                  "push": {
+                      "particles_nb": 4
+                  }
+              }
+          },
+          "retina_detect": true
+      });
+  </script>
 
-        .bg-video {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-            object-fit: cover;
-        }
+  <!-- Your original content below (unchanged) -->
+  <script type="text/javascript">
+      function display_ct7() {
+      var x = new Date()
+      var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+      hours = x.getHours( );
+      hours = hours ? hours : 12;
+      hours=hours.toString().length==1? 0+hours.toString() : hours;
+      var minutes=x.getMinutes().toString()
+      minutes=minutes.length==1 ? 0+minutes : minutes;
+      var seconds=x.getSeconds().toString()
+      seconds=seconds.length==1 ? 0+seconds : seconds;
+      var month=(x.getMonth() +1).toString();
+      month=month.length==1 ? 0+month : month;
+      var dt=x.getDate().toString();
+      dt=dt.length==1 ? 0+dt : dt;
+      var x1=month + "/" + dt + "/" + x.getFullYear(); 
+      x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
+      document.getElementById('ct7').innerHTML = x1;
+      display_c7();
+      }
+      function display_c7(){
+      var refresh=1000; // Refresh rate in milli seconds
+      mytime=setTimeout('display_ct7()',refresh)
+      }
+      display_c7();
+  </script> 
+  <script type="text/javascript">
+      var snowmax=40
+      var snowcolor=new Array("#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF")
+      var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+      var snowletter=""
+      var sinkspeed=0.6
+      var snowmaxsize=15
+      var snowminsize=8
+      var snowingzone=1
+      
+      // Do not edit below this line
+      var snow=new Array()
+      var marginbottom
+      var marginright
+      var timer
+      var i_snow=0
+      var x_mv=new Array();
+      var crds=new Array();
+      var lftrght=new Array();
+      var browserinfos=navigator.userAgent 
+      var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+      var ns6=document.getElementById&&!document.all
+      var opera=browserinfos.match(/Opera/)  
+      var browserok=ie5||ns6||opera
+      
+      function randommaker(range) {       
+          rand=Math.floor(range*Math.random())
+          return rand
+      }
+      
+      function initsnow() {
+          if (ie5 || opera) {
+              marginbottom = document.body.clientHeight
+              marginright = document.body.clientWidth
+          }
+          else if (ns6) {
+              marginbottom = window.innerHeight
+              marginright = window.innerWidth
+          }
+          var snowsizerange=snowmaxsize-snowminsize
+          for (i=0;i<=snowmax;i++) {
+              crds[i] = 0;                      
+              lftrght[i] = Math.random()*15;         
+              x_mv[i] = 0.03 + Math.random()/10;
+              snow[i]=document.getElementById("s"+i)
+              snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+              snow[i].size=randommaker(snowsizerange)+snowminsize
+              snow[i].style.fontSize=snow[i].size
+              snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+              snow[i].sink=sinkspeed*snow[i].size/5
+              if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+              if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+              if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+              if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+              snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+              snow[i].style.left=snow[i].posx
+              snow[i].style.top=snow[i].posy
+          }
+          movesnow()
+      }
+      
+      function movesnow() {
+          for (i=0;i<=snowmax;i++) {
+              crds[i] += x_mv[i];
+              snow[i].posy+=snow[i].sink
+              snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+              snow[i].style.top=snow[i].posy
+              
+              if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+                  if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+                  if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+                  if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+                  if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+                  snow[i].posy=0
+              }
+          }
+          var timer=setTimeout("movesnow()",50)
+      }
+    
+      for (i=0;i<=snowmax;i++) {
+          document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+      }
+      if (browserok) {
+          window.onload=initsnow
+      }
+  </script> 
+  <div class="container" style="min-height: 100%;"> 
+   <div class="middle" style="min-height: 100%;"> 
+    <div style="text-align: center; width:1000px; top:5%;"> 
+     <img src="https://media.tenor.com/YB58oQ8Xj0oAAAAC/anime-sad-anime.gif" alt="Mr.risky Ganteng 🥰" width="400" height="200" border="0"> 
+     <br>
+     <br>
+     <br>
+     <br> 
+     <font size="6" class="texts"><span style="opacity: 50%;">[+]---</span><span style="font-weight:bold;"> Hacked By ./Mr.risky</span><span style="opacity: 50%;">---[+]</span></font> 
+     <div class="texts2" style="margin:auto; margin-top:10px; background-color:var(--white); width: 300px; height: 3px;"></div> 
+     <br> 
+     <font size="5" class="texts3" color="white"><span>./NetralKomunitas</span></font> 
+     <br>
+     <br>
+     <br> 
+     <font size="6" class="texts3" color="red">" HUJAN HANYA MEMBASAHI BUKAN MENGHALANGI,"</font><br><font size="6" class="texts3" color="white">DAN AKU HANYA BISA MENCINTAI BUKAN MEMILIKI :)</font><br> <font size="5" class="texts3" color="white" style="opacity: 50%;"><br><br><i>– [!] A FOR Mr.risky [!] –</i></font> 
+     <br>
+     <br>
+     <br> 
+     <div class="texts2" style="margin:auto; background-color:var(--white); width: 830px; height: 3px;"></div> 
+     <div class="parent" align="center" style="margin:auto; width: 850px; height: 25px;"> 
+      <font size="6" class="texts2">||</font> 
+      <font class="texts" size="5" style=" font-weight:bold; margin-top:10px;"> Greetz </font> 
+      <font size="6" class="texts2">:</font> 
+      <div class="parent" align="center" style="width: 650px; height: 25px;"> 
+       <font size="5" style="font-weight:bold; margin-top:10px;" class="texts"> 
+        <marquee>
+          - NetralTeam - Mr.risky - Mode - Sad
+        </marquee> </font> 
+      </div> 
+      <font size="6" class="texts2">||</font> 
+     </div> 
+     <br> 
+     <div class="texts2" style="margin:auto; background-color:var(--white); width: 830px; height: 3px;"></div> 
+     <br> 
+     <div class="boxborder parent" align="center" style="margin:auto; width: 400px; height: 40px;"> 
+      <div class="parent" align="center" style="margin:auto; width: 395px; height: 30px;"> 
+       <select class="cusbtn select" name="audios" id="audios" style=" padding: 0px 0px; width:30px; height:30px; font-size: 15px; margin-left: 2px;" title="Audio Library"> <option class="drp" value="01">| JAKARTA HARI INI |</option> <option class="drp" value="02">| KELINGAN MANTAN |</option> <option class="drp" value="04">| DUKA SAD VIBES |</option> <option class="drp" value="05">| DIARY DEPRESIKU |</option> </select> 
+       <button class="cusbtn" id="play" onclick="play()" style="width:30px; height:30px; padding: 0px 0px; font-size: 20px; margin-right: 2px; margin-left: 2px;" title="Play Audio"><i class="fa fa-play-circle"></i></button> 
+       <button class="cusbtn" id="pause" onclick="pause()" style="opacity:50%; width:30px; height:30px; padding: 0px 0px; font-size: 20px; margin-right: 2px; margin-left: 2px;" title="Pause Audio"><i class="fa fa-stop-circle"></i></button> 
+       <button id="looptrue" class="cusbtn" onclick="looptrue()" style="width:30px; height:30px; padding: 0px 0px;" title="Repeat OFF"><i class="fa fa-retweet" style="color: #FFFFFF;"></i></button> 
+       <button id="loopfalse" class="cusbtn" onclick="loopfalse()" style="opacity:50%; width:30px; height:30px; padding: 0px 0px;" title="Repeat ON"><i class="fa fa-retweet" style="color: #FFFFFF;"></i></button> 
+       <div class="boxborder parent" align="center" style="margin:auto; width: 240px; height: 17px; padding: 5px; margin-right: 2px; margin-left: 2px; overflow: hidden;"> 
+        <span class="type line-height: 1.6;"> <span style="background-color: #000000; margin:auto; height: 20px;"> <span size="4" style="font-weight: bold; height: 30px;" class="texts">Now Playing:</span> <span size="3" style="font-weight: bold; height: 30px;" class="texts" id="title">BELUM PLAY</span> <span size="4" style="font-weight: bold; height: 30px;" class="texts">Hacked By ./Mr.risky</span> </span> </span> 
+       </div> 
+       <div class="boxborder" align="center" style="margin:auto; width: 50px; height: 17px; padding: 5px; margin-right: 2px; margin-left: 2px;">
+        <font id="timeleft" class="texts" style="font-weight: bold; font-family: 'Roboto Mono';" size="2">00:00</font> 
+       </div> 
+      </div> 
+     </div> 
+     <br> 
+     <font id="ct7" size="5" class="texts" style="opacity: 50%; color: var(--white); font-family: 'Roboto Mono', monospace;"></font> 
+     <br>
+     <br> 
+     <font size="4" class="texts" style="opacity: 50%; color: var(--white); font-family: 'Roboto Mono', monospace;">Copyrights ©  Mr.risky</font> l 
+     <audio id="aud01" src="https://files.catbox.moe/1a3003.mp3"></audio> 
+     <audio id="aud02" src="https://files.catbox.moe/9xsqvu.mp3"></audio> 
+     <audio id="aud04" src="https://files.catbox.moe/kp9otf.mp3"></audio> 
+     <audio id="aud05" src="https://files.catbox.moe/rcrlpr.mp3"></audio> 
+    </div> 
+   </div> 
+  </div> 
+  <script type="text/javascript">
+      var Audloop = 0;
+      paragraph = document.getElementById("title");
+      document.getElementById("audios").onchange = function() {title()};
 
-        /* Default: tampilkan desktop */
-        #bg-video-mobile, #bg-image-mobile {
-            display: none;
-        }
+      function title() {
+          var x = document.getElementById("audios").value;
+          if(x == 01){
+              paragraph.innerHTML = "JAKARTA HARI INI";
+          } else if(x == 02){
+              paragraph.innerHTML = "reckless speed up";
+          } else if(x == 03){ 
+              paragraph.innerHTML = "KELINGAN MANTAN";
+          } else if(x == 04){ 
+              paragraph.innerHTML = "DUKA SAD VIBES";
+          } else if(x == 05){ 
+              paragraph.innerHTML = "DIARY DEPRESIKU";
+          }
+      }
 
-        /* Jika layar kecil (mobile), sembunyikan desktop */
-        @media screen and (max-width: 768px) {
-            #bg-video-desktop {
-                display: none;
-            }
+      const looptrue = document.getElementById('looptrue');
+      const loopfalse = document.getElementById('loopfalse');
+      loopfalse.style.display = 'none';
+      
+      looptrue.addEventListener('click', () => {
+          looptrue.style.display = 'none';
+          loopfalse.style.display = 'block';
+          Audloop = 1;
+      });
+      
+      loopfalse.addEventListener('click', () => {
+          looptrue.style.display = 'block';
+          loopfalse.style.display = 'none';
+          Audloop = 0;
+      });
 
-            #bg-video-mobile {
-                display: block;
-            }
+      document.getElementById('pause').style.display = 'none';
+      
+      document.querySelectorAll('audio').forEach(el => el.addEventListener('ended', function (e) {
+          document.getElementById('pause').style.display = 'none';
+          document.getElementById('play').style.display = 'block';
+          var endedTag=e.target;
+      }));
 
-            /* Jika pakai gambar untuk mobile */
-            #bg-image-mobile {
-                display: block;
-                position: fixed;
-                right: 0;
-                bottom: 0;
-                min-width: 100%;
-                min-height: 100%;
-                z-index: -1;
-                object-fit: cover;
-            }
-        }
+      function pause() {
+          document.getElementById('pause').style.display = 'none';
+          document.getElementById('play').style.display = 'block';
+          document.querySelectorAll('audio').forEach(el => el.pause());
+      }
 
-        .logo {
-            width: 250px;
-            height: auto;
-            animation: flicker 1.5s infinite alternate;
-        }
+      function timeLeft(player) {
+          var aud = document.getElementById(player);
+          aud.addEventListener("timeupdate", function() {
+              var timeleft = document.getElementById('timeleft'),
+                  duration = parseInt( aud.duration ),
+                  currentTime = parseInt( aud.currentTime ),
+                  timeLeft = duration - currentTime,
+                  s, m;
+              
+              s = timeLeft % 60;
+              m = Math.floor( timeLeft / 60 ) % 60;
+              
+              s = s < 10 ? "0"+s : s;
+              m = m < 10 ? "0"+m : m;
+              
+              timeleft.innerHTML = m+":"+s;
+          }, false);
+      }
 
-        @keyframes flicker {
-            0% { opacity: 1; }
-            100% { opacity: 0.6; }
-        }
+      function play() {
+          document.getElementById('pause').style.display = 'block';
+          document.getElementById('play').style.display = 'none';
 
-        .alert-text {
-            font-size: 3em;
-            color: red;
-            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #800000;
-            animation: glitch 0.5s infinite alternate;
-        }
-
-        @keyframes glitch {
-            0% { transform: skewX(0deg); }
-            20% { transform: skewX(-10deg); }
-            40% { transform: skewX(10deg); }
-            60% { transform: skewX(-5deg); }
-            80% { transform: skewX(5deg); }
-            100% { transform: skewX(0deg); }
-        }
-
-        .message {
-            font-size: 1.5em;
-            color: white;
-            margin-top: 10px;
-            animation: appear 5s infinite alternate;
-        }
-
-        @keyframes appear {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        .footer {
-            color: white;
-            font-size: 1.2em;
-            margin-top: 20px;
-        }
-
-        .quote {
-            margin-top: 20px;
-            color: white;
-            font-size: 1.5em;
-            text-align: center;
-            padding: 0 20px;
-            max-width: 800px;
-        }
-
-        audio {
-            display: none;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-            padding: 20px;
-        }
-
-        .click-message {
-            color: white;
-            margin-top: 15px;
-            font-size: 1em;
-            animation: blink 2s infinite;
-        }
-
-        @keyframes blink {
-            0% { opacity: 0.5; }
-            50% { opacity: 1; }
-            100% { opacity: 0.5; }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Video Background untuk Desktop -->
-    <video autoplay muted loop id="bg-video-desktop" class="bg-video">
-        <source src="https://a.top4top.io/m_3459iohux1.mp4" type="video/mp4">
-    </video>
-
-    <!-- Video Background untuk Mobile -->
-    <video autoplay muted loop id="bg-video-mobile" class="bg-video">
-        <source src="https://b.top4top.io/m_3476qlsli1.mp4" type="video/mp4">
-    </video>
-
-    <!-- Alternatif Gambar untuk Mobile (jika tidak mau video) -->
-    <!-- <img id="bg-image-mobile" src="https://example.com/mobile-bg.jpg" class="bg-video" alt="Mobile Background"> -->
-
-    <div class="content">
-        <img class="logo" src="https://qu.ax/NmouA.png" alt="Security Alert">
-        <div class="alert-text">Hacked By Mr.risky</div>
-        <div class="message">Aku Sangat Sedih Pada Kejadian 2 Bulan Yang Lalu, Orang Yang Aku Sukai Lebih Dari 1 Tahun Telah Bersama Yang Lain.</div>
-
-        <div class="click-message">Click anywhere to play sound</div>
-
-        <audio id="bg-audio" autoplay muted loop>
-            <source src="https://audio.jukehost.co.uk/3zSuO7gzj112WxVVESvTjquXNfY7nGaT" type="audio/mp3">
-        </audio>
-
-        <div class="quote">Diam Bukan Berarti Tidak Tau.</div>
-
-        <div class="footer">© Mr.risky - NETRALITAS</div>
-    </div>
-
-    <script>
-        // Cegah klik kanan
-        document.addEventListener('contextmenu', event => event.preventDefault());
-
-        // Cegah shortcut developer tools
-        document.addEventListener('keydown', event => {
-            if (event.ctrlKey && ['u', 's'].includes(event.key.toLowerCase())) event.preventDefault();
-            if (event.ctrlKey && event.shiftKey && ['i', 'j', 'c'].includes(event.key.toLowerCase())) event.preventDefault();
-            if (event.key === 'F12') event.preventDefault();
-        });
-
-        // Deteksi Developer Tools
-        setInterval(() => {
-            if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
-                document.body.innerHTML = "<h1 style='color:red; text-align:center; margin-top:20%;'>Kami Dari: KOMUNITAS NETRAL</h1>";
-            }
-        }, 1000);
-
-        // Autoplay audio
-        window.addEventListener('DOMContentLoaded', () => {
-            const audio = document.getElementById('bg-audio');
-            audio.play().then(() => {
-                audio.muted = false;
-                document.querySelector('.click-message').style.display = 'none';
-            }).catch((e) => {
-                document.querySelector('.click-message').style.display = 'block';
-                document.addEventListener('click', function playOnce() {
-                    audio.muted = false;
-                    audio.play();
-                    document.querySelector('.click-message').style.display = 'none';
-                    document.removeEventListener('click', playOnce);
-                });
-            });
-        });
-
-        // Pastikan video tetap play
-        document.addEventListener('DOMContentLoaded', () => {
-            const videoDesktop = document.getElementById('bg-video-desktop');
-            const videoMobile = document.getElementById('bg-video-mobile');
-            videoDesktop?.play().catch(e => console.log("Desktop video autoplay prevented:", e));
-            videoMobile?.play().catch(e => console.log("Mobile video autoplay prevented:", e));
-        });
-    </script>
-</body>
-    </html>
+          var Aud = document.getElementById("audios").value;
+          var aud01 = document.getElementById("aud01");
+          var aud02 = document.getElementById("aud02");
+          var aud03 = document.getElementById("aud03");
+          var aud04 = document.getElementById("aud04");
+          var aud05 = document.getElementById("aud05");
+      
+          if(Aud==01){
+              title()
+              aud01.play();
+              aud01.currentTime = 0;
+              timeLeft("aud01")
+              if(Audloop == 1){
+                  aud01.loop = true;
+                  timeLeft("aud01")
+              } else if(Audloop == 0){ aud01.loop = false; };
+          } else if(Aud==02){
+              title()
+              aud02.play();
+              aud02.currentTime = 0;
+              timeLeft("aud02")
+              if(Audloop == 1){
+                  aud02.loop = true;
+                  timeLeft("aud02")
+              } else if(Audloop == 0){ aud02.loop = false; };
+          } else if(Aud==03){
+              title()
+              aud03.play();
+              aud03.currentTime = 0;
+              timeLeft("aud03")
+              if(Audloop == 1){
+                  aud03.loop = true;
+                  timeLeft("aud03")
+              } else if(Audloop == 0){ aud03.loop = false; };
+          } else if(Aud==04){
+              title()
+              aud04.play();
+              aud04.currentTime = 0;
+              timeLeft("aud04")
+              if(Audloop == 1){
+                  aud04.loop = true;
+                  timeLeft("aud04")
+              } else if(Audloop == 0){ aud04.loop = false; };
+          } else if(Aud==05){
+              title()
+              aud05.play();
+              aud05.currentTime = 0;
+              timeLeft("aud05")
+              if(Audloop == 1){
+                  aud05.loop = true;
+                  timeLeft("aud05")
+              } else if(Audloop == 0){ aud05.loop = false; };
+          }
+      }
+  </script> 
+ </body>
+</html>
